@@ -13,7 +13,7 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        String identifiant = getIntent().getStringExtra("strIdentifiantadmin");
+        String identifiant = getIntent().getStringExtra("strIdentifiant");
         String message = getString(R.string.home_welcome) + " : \n" + identifiant;
         ((TextView)findViewById(R.id.tvBonjour)).setText(message);
 
@@ -21,8 +21,8 @@ public class HomeActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                //Intent intent = new Intent(HomeActivity.this, HomeActivity.class);
-                //startActivity(intent);
+                Intent intent = new Intent(HomeActivity.this, LifeCycleActivity.class);
+                startActivity(intent);
             }
         });
 
