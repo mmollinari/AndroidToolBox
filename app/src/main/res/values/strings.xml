@@ -1,7 +1,14 @@
 <resources>
     <string name="app_name">AndroidToolBox</string>
+
     <string name="login_connection">Connexion</string>
     <string name="login_validate">Valider</string>
     <string name="login_login">Identifiant</string>
     <string name="login_password">Mot de passe</string>
+
+    <string name="home_welcome">Bonjour</string>
+    <string name="home_lifecycle">Cycle de vie</string>
+    <string name="home_save">Sauvegarde</string>
+    <string name="home_permission">Permissions</string>
+    <string name="home_webservices">Webservices</string>
 </resources>
