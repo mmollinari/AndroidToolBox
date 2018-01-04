@@ -19,6 +19,19 @@ public class LifeCycleActivity extends AppCompatActivity {
         tvLog = findViewById(R.id.tvLog);
         isActivityRunning = true;
 
+        LifeCycleFragment lifeCycleFragment;
+        if(savedInstanceState != null){
+            lifeCycleFragment = new LifeCycleFragment();
+            getSupportFragmentManager().beginTransaction()
+                    .add(R.id.fragment, lifeCycleFragment)
+                    .commit();
+        }
+        else {
+            getSupportFragmentManager()
+                    .findFragmentById(R.id.fragment);
+        }
+
+
         showLog("Cycle de vie Activité : onCreate");
     }
 
@@ -54,13 +67,13 @@ public class LifeCycleActivity extends AppCompatActivity {
     }
 
 
-    private void showLog(String logMessage) {
+    public void showLog(String logMessage) {
         if(isActivityRunning) {
             String message = tvLog.getText() + logMessage + "\n";
             tvLog.setText(message);
         }
         else {
-            Toast.makeText(getApplicationContext(), logMessage, Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, logMessage, Toast.LENGTH_SHORT).show();
         }
         Log.d("LifeCycleActivity", logMessage);
     }

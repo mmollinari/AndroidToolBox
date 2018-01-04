@@ -11,4 +11,6 @@
     <string name="home_save">Sauvegarde</string>
     <string name="home_permission">Permissions</string>
     <string name="home_webservices">Webservices</string>
+
+    <string name="hello_fragment">Bonjour fragment</string>
 </resources>
