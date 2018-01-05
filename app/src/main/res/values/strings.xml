@@ -13,4 +13,10 @@
     <string name="home_webservices">Webservices</string>
 
     <string name="hello_fragment">Bonjour fragment</string>
+    <string name="storage_title">Accès au fichier</string>
+    <string name="storage_name">Nom : &#160;</string>
+    <string name="storage_first_name">Prenom : &#160;</string>
+    <string name="storage_date">Date : &#160;</string>
+    <string name="storage_age">Age : &#160;</string>
+    <string name="storage_show">lecture</string>
 </resources>

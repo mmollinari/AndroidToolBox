@@ -121,4 +121,14 @@
         app:layout_constraintEnd_toEndOf="@+id/ivWebservice"
         app:layout_constraintStart_toStartOf="@+id/ivWebservice"
         app:layout_constraintTop_toTopOf="@+id/tvPermission" />
+
+    <ImageView
+        android:id="@+id/ibDeconnexion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:onClick="logOut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_lock_power_off" />
 </android.support.constraint.ConstraintLayout>
