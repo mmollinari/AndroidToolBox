@@ -35,6 +35,14 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.ivPermission).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeActivity.this, PermissionActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     public void logOut(View v) {

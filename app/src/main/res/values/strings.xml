@@ -19,4 +19,10 @@
     <string name="storage_date">Date : &#160;</string>
     <string name="storage_age">Age : &#160;</string>
     <string name="storage_show">lecture</string>
+
+    <string name="permission_title">Accès aux informations Android</string>
+    <string name="permission_loading">Chargement de la position …</string>
+    <string name="permission_location">Latitude : %1$f \nLongitude : %2$f</string>
+
+
 </resources>
