@@ -3,6 +3,9 @@
     package="fr.isen.mollinari.androidtoolbox">
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
 
     <application
         android:allowBackup="true"

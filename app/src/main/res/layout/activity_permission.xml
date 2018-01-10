@@ -24,12 +24,32 @@
         android:id="@+id/tvDisplay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
         android:text="@string/permission_loading"
         android:textColor="@color/colorText"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivPhotoGalerie"
+        app:layout_constraintTop_toTopOf="@+id/ivPhotoGalerie" />
+
+    <ImageView
+        android:id="@+id/ivPhotoGalerie"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:onClick="getPickFromGallerie"
+        android:scaleType="fitCenter"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivPhotoGalerie" />
 
 </android.support.constraint.ConstraintLayout>
