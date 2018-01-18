@@ -1,4 +1,4 @@
-package fr.isen.mollinari.androidtoolbox;
+package fr.isen.mollinari.androidtoolbox.activity;
 
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
@@ -18,6 +18,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.Calendar;
+
+import fr.isen.mollinari.androidtoolbox.R;
 
 public class StorageActivity extends AppCompatActivity {
 

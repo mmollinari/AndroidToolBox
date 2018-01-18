@@ -3,9 +3,9 @@
     package="fr.isen.mollinari.androidtoolbox">
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
-
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -14,17 +14,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LoginActivity">
+        <activity android:name=".activity.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".HomeActivity" />
-        <activity android:name=".LifeCycleActivity" />
-        <activity android:name=".StorageActivity" />
-        <activity android:name=".PermissionActivity" />
+        <activity android:name=".activity.HomeActivity" />
+        <activity android:name=".activity.LifeCycleActivity" />
+        <activity android:name=".activity.StorageActivity" />
+        <activity android:name=".activity.PermissionActivity" />
+        <activity android:name=".activity.WebServiceActivity" />
     </application>
 
 </manifest>

@@ -1,10 +1,13 @@
-package fr.isen.mollinari.androidtoolbox;
+package fr.isen.mollinari.androidtoolbox.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import fr.isen.mollinari.androidtoolbox.fragment.LifeCycleFragment;
+import fr.isen.mollinari.androidtoolbox.R;
 
 public class LifeCycleActivity extends AppCompatActivity {
 

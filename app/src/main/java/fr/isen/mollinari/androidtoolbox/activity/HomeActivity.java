@@ -1,4 +1,4 @@
-package fr.isen.mollinari.androidtoolbox;
+package fr.isen.mollinari.androidtoolbox.activity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -7,6 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+
+import fr.isen.mollinari.androidtoolbox.R;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -39,6 +41,14 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(HomeActivity.this, PermissionActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.ivWebservice).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeActivity.this, WebServiceActivity.class);
                 startActivity(intent);
             }
         });

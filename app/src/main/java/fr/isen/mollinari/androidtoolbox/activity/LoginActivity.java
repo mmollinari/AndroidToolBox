@@ -1,4 +1,4 @@
-package fr.isen.mollinari.androidtoolbox;
+package fr.isen.mollinari.androidtoolbox.activity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import fr.isen.mollinari.androidtoolbox.R;
 
 public class LoginActivity extends AppCompatActivity {
 

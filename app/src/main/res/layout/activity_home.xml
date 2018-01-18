@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
-    tools:context="fr.isen.mollinari.androidtoolbox.HomeActivity">
+    tools:context="fr.isen.mollinari.androidtoolbox.activity.HomeActivity">
 
     <ImageView
         android:id="@+id/ivLogo"

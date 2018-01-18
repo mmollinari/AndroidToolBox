@@ -1,14 +1,15 @@
-package fr.isen.mollinari.androidtoolbox;
+package fr.isen.mollinari.androidtoolbox.fragment;
 
 import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import java.util.zip.Inflater;
+import fr.isen.mollinari.androidtoolbox.R;
+import fr.isen.mollinari.androidtoolbox.activity.LifeCycleActivity;
 
 
 public class LifeCycleFragment extends Fragment {
@@ -24,7 +25,7 @@ public class LifeCycleFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View fragView = inflater.inflate(R.layout.fragment_life_cycle, container, false);
         showLogInActivity("Cycle de vie fragment : onCreateView");
         return fragView;
@@ -63,6 +64,8 @@ public class LifeCycleFragment extends Fragment {
     }
 
     private void showLogInActivity(String logMessage) {
-        ((LifeCycleActivity)getActivity()).showLog(logMessage);
+        if (getActivity() != null) {
+            ((LifeCycleActivity)getActivity()).showLog(logMessage);
+        }
     }
 }
